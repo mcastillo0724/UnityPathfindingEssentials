@@ -42,10 +42,9 @@ public class PatrolAgent : MonoBehaviour
         {
             return;
         }
-        
+
         if(!agent.pathPending && agent.remainingDistance < minRemainingDistance)
         {
-            Debug.Log(destinationPoint);
             GoToNextPoint();
         }
     }
